@@ -1,0 +1,32 @@
+<html>
+<body>
+<button onclick="myFunction()">Click me..</button>
+<input type="text" id="txt">
+<input type="text" id="txt2">
+<script>
+function myFunction()
+{
+		var x = 5;
+		var z = x ** 2;
+		alert(z);
+		//var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+		var person = {
+			firstName: "John",
+			lastName : "Doe",
+			id : 5566,
+			fullName : function() {
+			return this.firstName + " " + this.lastName;
+			
+			}};
+			//alert(person.fullName());
+		//alert(person.firstName);
+		//alert(typeof person);
+			document.getElementById('txt').value=person.firstName
+			document.getElementById('txt2').value=person.fullName()
+			
+		alert(x+x2);
+		}
+</script>
+
+</body>
+</html>

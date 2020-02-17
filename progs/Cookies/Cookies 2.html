@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+function checkCookie()
+{
+   var username=getCookie("username");
+   if (username!=null && username!="")
+  {
+  alert("Welcome again " + username);
+  }
+else 
+  {
+       username=prompt("Please enter your name:","");
+       if (username!=null && username!="")
+    {
+        setCookie("username",username,365);
+    }
+  }
+}
+</script>
+<input type="button" value="Click here.." onclick="checkCookie()">
+</body>
+</html>

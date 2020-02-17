@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+		
+	function myfun3(){	
+	//document.write("current date and time:  "+new Date());
+	//document.write("current date and time:  "+new Date(2020,12,6));
+	//document.write("current date and time:  "+new Date("October 3,2014"));
+	//document.getElementById('tx').value=new Date();
+	//document.getElementById('tx').value=new Date().toString();
+	//document.getElementById('tx').value=new Date().toUTCString();
+	//document.getElementById('tx').value=new Date().toDateString();
+	var msec = Date.parse("March 21, 2012");
+	var d = new Date(msec);
+	//document.getElementById('tx').value=d;
+	//document.getElementById('tx').value=d.getFullYear();
+	//document.getElementById('tx').value=d.getMonth();
+	//document.getElementById('tx').value=d.getDate();
+	d.setFullYear(2020);
+	d.setMonth(6);
+	document.getElementById('tx').value=d.getMonth();
+	}
+	
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p><br>
+<input type="text" id="tx" size="80"><br><br>
+<input type="text" id="tx2">
+<button type="button" onclick="myfun3()">Click me..</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+</body>
+</html>

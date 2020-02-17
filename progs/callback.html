@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<p>Click the button to display a confirm box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+	// add() function is called with arguments a, b 
+   // and callback, callback will be executed just  
+   // after ending of add() function 
+   function add(a, b , callback){ 
+   document.write("The sum "+(a+b)+"<br>"); 
+   callback(); 
+   } 
+     
+   // disp() function is called just 
+   // after the ending of add() function  
+   function disp(){ 
+   document.write('printed after addition');
+   } 
+     
+	function myFunction()
+	{ 
+   // Calling add() function 
+   add(5,6,disp);  
+	}
+	
+</script>
+
+</body>
+</html>

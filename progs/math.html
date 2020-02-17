@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+		
+	function myfun3(){	
+	var x=[20,49,45,3,98,87];
+	//document.getElementById('tx').value=Math.min(34,4,6,1); //does not work for external array
+	//var num=Math.floor(Math.random()*10);  // 0 to 9
+	//var num=Math.floor(Math.random()*11);  // 0 to 10
+	//var num=Math.floor(Math.random()*100); // 0  to 99
+	var num=Math.floor(Math.random()*101);	 //	0  to 100
+	document.getElementById('tx').value=num;
+	}
+	
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p><br>
+<input type="text" id="tx" size="80"><br><br>
+<input type="text" id="tx2">
+<button type="button" onclick="myfun3()">Click me..</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+</body>
+</html>

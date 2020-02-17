@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+	function validateForm(){	
+	var name=document.my.nm.value;
+	var mob=document.my.mob.value; 
+	var pin=document.my.pin.value;
+	var nmmsg="Name is required";
+	var mobmsg1="Enter proper mobile number";
+	var mobmsg2="Enter Only numerics for mobile";
+	
+	if(name==null || name=="")
+	{
+	document.getElementById('ernm').innerHTML=nmmsg;
+	return false;
+	}
+	else if(mob.length!=10){	
+		document.getElementById('ermob').innerHTML=mobmsg1;
+		return false;
+	}
+	else if(isNaN(mob)){
+		document.getElementById('ermob').innerHTML=mobmsg2;
+		return false;
+	}
+	else{
+		document.my.submit();
+	}
+}
+
+function removemsg(ctid){
+	document.getElementById(ctid).innerHTML="";
+}
+</script>
+</head>
+<body>
+<form name="my" method="post" onsubmit="return validateForm()">
+Name:<input type="text" name="nm" onfocus="removemsg('ernm')"><span id="ernm" style="color:red"></span><br>
+Mobile:<input type="text" name="mob" onfocus="removemsg('ermob')"><span id="ermob" style="color:red"></span><br>
+Pincode:<input type="text" name="pin"><br>
+<input type="submit" value="Save data"><br>
+</form>
+</body>
+<html>

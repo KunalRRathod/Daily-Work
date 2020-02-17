@@ -1,0 +1,20 @@
+<html>
+<body>
+Val1<input type="text" id="txt1"><br>
+Val2<input type="text" id="txt2"><br>
+Val3<input type="text" id="txt3"><br>
+Result<input type="text" id="res"><br>
+<input type="button" onclick="add()" value="Add">
+<input type="button" value="Mul">
+<script>
+    
+function add()
+{	var x= parseInt(document.getElementById("txt1").value);
+	var y= parseInt(document.getElementById("txt2").value);
+	var z= parseInt(document.getElementById("txt3").value);
+	var result=x+y+z;
+	document.getElementById('res').value=result;
+}
+</script>
+</body>
+</html>

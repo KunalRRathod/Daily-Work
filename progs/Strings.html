@@ -1,0 +1,47 @@
+<html>
+<body>
+<button onclick="myFunction()">Click me..</button>
+<input type="text" id="txt">
+<input type="text" id="txt2">
+<script>
+function myFunction()
+{
+		var x = 5;
+		var z = x ** 2;
+		//alert(z);
+		//var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+		var person = {
+			firstName: "John",
+			lastName : "Doe",
+			id : 5566,
+			fullName : function() {
+			return this.firstName + " " + this.lastName;
+			
+			}};
+			//alert(person.fullName());
+		//alert(person.firstName);
+		//alert(typeof person);
+			var x=parseInt(document.getElementById('txt').value);
+			var x2=parseInt(document.getElementById('txt2').value);
+			
+		alert(x+x2);
+		
+		
+		
+		
+		
+		
+		/*
+		var guest = "Ray Harris"; 
+		alert(guest.charAt(2)) ;			
+		alert ( guest.toUpperCase());	
+		alert ( guest.substr(0,5) );
+		var str= guest.bold();
+		document.write(str);
+	 */
+ 
+}
+</script>
+
+</body>
+</html>

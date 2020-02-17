@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+ function myfun(){
+ var x=30;
+ var y=12;
+ var z=x%y;
+ 
+ document.getElementById('demo').innerHTML="changed text  "+z;
+ }
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p>
+<button type="button" onclick="myfun()">Change text</button>
+</body>
+</html>

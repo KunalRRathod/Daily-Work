@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+		
+	function myfun3(){
+	
+	var arr=[2,'zbc',"xyz"];
+	var arr2=new Array(2,'abc',"xyz");
+	//document.getElementById('tx').value=arr[1];
+	//document.getElementById('tx').value=arr;
+	document.getElementById('tx').value=arr.join('*');
+	var person = {firstName:"John", lastName:"Doe", age:46};
+	arr2[2]='hello';	
+	//alert(arr.length);
+	arr.push('hello');
+	//alert(arr.sort());
+	//alert(Array.isArray(arr));
+	//alert(arr instanceof Array);
+	//alert(arr.pop());   //remove from last
+	//alert(arr.shift());   // remove from beginning
+	//alert(arr.unshift('hyd'));
+	//alert(arr.unshift('hyd')); //adds at the beginning
+	//arr.splice('kkk',7,'lll');
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	//alert(fruits.splice(2, 0, "Lemon", "Kiwi")); //elemnts will be shited upwards
+	//alert(fruits.splice(2, 2, "Lemon", "Kiwi")); //element at position 2 will be deletd and the given array will be inserted at this position
+	
+	var citrus = fruits.slice(1);
+	//alert(fruits);
+	var txt="";
+	var numbers = [45, 4, 9, 16, 25];
+	numbers.forEach(myFunction);
+
+	function myFunction(value) {
+	txt = txt + value + "<br>";
+	}
+	document.write(txt);
+	}
+	
+	function myfun4(){
+	var fruits, text, fLen, i;
+	fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fLen = fruits.length;
+
+	text = "<ul>";
+	for (i = 0; i < fLen; i++) 
+	{
+	text += "<li>" + fruits[i] + "</li>";
+	}
+	text += "</ul>";
+	document.write(text);
+	}
+	
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p><br>
+<input type="text" id="tx"><br><br>
+<input type="text" id="tx2">
+<button type="button" onclick="myfun3()">Click me..</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+</body>
+</html>

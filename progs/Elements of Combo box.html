@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+
+function getSelectedOptions()
+{
+var x=document.getElementById("mySelect");
+var txt="Selected options: ";
+var i;
+for (i=0;i<x.length;i++)
+  {
+    if(x.options[i].selected){
+  txt=txt + "\n" + x.options[i].text;
+  }
+  }
+alert(txt);
+}
+
+
+function getOptions()
+{
+var x=document.getElementById("mySelect");
+var txt="All options: ";
+var i;
+for (i=0;i<x.length;i++)
+  {
+  txt=txt + "\n" + x.options[i].text;
+  }
+alert(txt);
+}
+</script>
+</head>
+<body>
+
+<form>
+Select your favorite fruit:
+<select id="mySelect" multiple>
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+  <option>Mango</option>
+  <option>Guava</option>
+</select>
+<br><br>
+<input type="button" onclick="getOptions()" value="Output all options..">
+<input type="button" onclick="getSelectedOptions()" value="Output Selected options..">
+</form>
+</body>
+</html>

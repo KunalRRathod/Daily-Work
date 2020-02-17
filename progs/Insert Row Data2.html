@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+var x=2;
+function insRow()
+{
+var t=document.getElementById('myTable').insertRow(-1);
+var y=t.insertCell(0);
+var z=t.insertCell(1);
+y.innerHTML=x;    //innerHTML
+//x=x+2;
+z.innerHTML=x+2;
+x=x+2;
+}
+</script>
+</head>
+
+<body>
+<table id="myTable" border="1">
+</table>
+<br>
+<input type="button" onclick="insRow()" value="Insert row..">
+
+</body>
+</html>

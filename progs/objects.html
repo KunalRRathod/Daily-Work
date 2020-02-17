@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+	function myfun(){
+	var car={fname:"raja",lname:"jani",address:"pune"}
+	// car["fname"]
+	document.getElementById('tx').value=car.fname;
+		
+	}
+	
+	function myfun2(){
+	var fn=document.getElementById('tx').value;	
+	var ln=document.getElementById('tx2').value;	
+	var person={fname:fn,lname:ln,fullName:function(){
+				  return this.fname+" "+this.lname;
+				  }
+				  };
+				  
+	alert(person.fullName());
+	}
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p><br>
+<input type="text" id="tx"><br><br>
+<input type="text" id="tx2">
+<button type="button" onclick="myfun2()">Click me..</button>
+</body>
+</html>

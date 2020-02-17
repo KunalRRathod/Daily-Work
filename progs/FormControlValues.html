@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<form id="frm1">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br>
+  <input type="submit" value="Submit" onclick="getValues()">
+</form> 
+
+
+<p>Return the value of each element in the form:</p>
+<p></p>
+<script type="text/javascript">
+function getValues(){
+var x=document.getElementById("frm1");
+for (var i=0; i<x.length; i++)
+  {
+  document.write(x.elements[i].value);
+  document.write("<br>");
+  }
+}
+</script>
+
+</body>
+</html>

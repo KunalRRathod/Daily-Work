@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function outer (val)
+{
+  // nested function:
+  function inner() 
+  { 
+    //note the use of "radius" - a parameter of outer function
+    return 2*val;   
+   }
+  
+  // call the nested function
+  return inner(val);  
+}
+
+var x=outer(30);
+  //alert("x::"+x);
+  
+var myFunction = new Function("a", "b", "return a * b");
+var x = myFunction(4, 3);
+alert("x::"+x);
+</script>
+</head>
+
+<body>
+
+<button>Click..</button>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<p id="p1">
+This is a text.<br>
+This is a text.<br>
+This is a text.
+</p>
+<script>
+function showData()
+{
+var x=document.getElementById('p1');
+x.style.visibility='hidden';
+//document.getElementById('p1').style.visibility='hidden'
+}
+
+function hideData()
+{
+var x=document.getElementById('p1');
+x.style.visibility='visible';
+//document.getElementById('p1').style.visibility='hidden'
+}
+
+function changeColor()
+{
+var x=document.getElementById('p1');
+x.style.color='red';
+x.style.border= '5px solid red';
+}
+</script>
+
+<input type="button" value="Hide text" 
+onclick="showData()">
+
+<input type="button" value="Show text"
+onclick="hideData()">
+
+<input type="button" value="Change color"
+onclick="changeColor()">
+
+</body>
+</html>

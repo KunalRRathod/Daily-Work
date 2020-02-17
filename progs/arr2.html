@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+		
+	function myfun3(){	
+	var numbers = [45, 4, 9, 16, 25];
+	//var numbers2 = numbers.map(myFunction);
+	//var numbers2 = numbers.filter(myfilterfun);
+	//var numbers2 = numbers.reduce(maketotal);
+	//var numbers2 = numbers.every(myfilterfun);
+	//var numbers2 = numbers.find(myfilterfun);
+	//document.write("Result : "+numbers2);
+	document.write(Math.floor(Math.random() * 10));
+	}
+	
+	function myFunction(value) {
+		return value * 2;
+	}	
+	
+	function myfilterfun(value){
+		return value>18;
+	}
+	
+	function maketotal(total,value){
+		return total+value;
+	}	
+</script>
+</head>
+<body>
+<button type="button" onclick="myfun3()">Click me..</button>
+</body>
+</html>

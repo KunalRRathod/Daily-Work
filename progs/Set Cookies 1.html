@@ -1,0 +1,20 @@
+<html>
+<head>
+
+
+</head>
+<body>
+<script type="text/javascript">
+function WriteCookie()
+{
+document.cookie = "name=oeschger";
+document.cookie = "favorite_food=tripe";
+alert(document.cookie.length);
+}
+</script>
+<form name="myform" action="">
+Enter name: <input type="text" name="customer"/>
+<input type="button" value="Set Cookie" onclick="WriteCookie()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+ function myfun(){
+ var x=30;
+ var y=12;
+ var z=x%y;
+ var person={fn:"aaaaa",lnm:"bbbbb"};
+ 
+ document.getElementById('demo').innerHTML="changed text  "+person.fn;
+ alert(typeof y);
+ }
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p>
+<button type="button" onclick="myfun()">Change text</button>
+</body>
+</html>

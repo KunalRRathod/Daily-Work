@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing Function</title>
+<script>
+	function ftoDegrees(fahrenheit){
+		return (5/9) * (fahrenheit-32);
+	}
+	
+	function myfun(){	
+    var x=	document.getElementById('tx').value;
+	var deg=ftoDegrees(x);
+	document.getElementById('tx2').value=deg;
+	//alert(x);
+	}
+</script>
+</head>
+<body>
+
+<p id="demo">I am a paragraph</p><br>
+<input type="text" id="tx"><br><br>
+<input type="text" id="tx2">
+<button type="button" onclick="myfun()">Change text</button>
+</body>
+</html>
