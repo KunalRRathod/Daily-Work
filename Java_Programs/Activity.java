@@ -1,7 +1,7 @@
-
+package com;
 import java.util.*; 
 public class Activity {
-    public static void main(String[] args) {
+    public static int main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Lowest range");
         int low_range = input.nextInt();
