@@ -31,11 +31,19 @@ public class EmployeeDAOImpl implements EmployeeDAO {
            return false;
        }
    }
-    public void addEmployee(Employee employee) {
-
-    }
 
     public void deleteEmployee(Employee employee) {
+       String sql = "delete from employee where id = ?";
+       try {
+           ps = conn.prepareStatement(sql);
+           ps.setInt(1, employee.getId());
+           ps.executeUpdate();
+          
+       }
+        catch (SQLException e){
+           e.printStackTrace();
+   
+        }
 
     }
 
@@ -44,6 +52,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
        try {
            ps = conn.prepareStatement(sql);
            ps.setInt(1, employee.getId());
+           ps.executeUpdate();
        }
        catch(Exception ex){
            ex.printStackTrace();
@@ -68,9 +77,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
                employee.setDesignation(rs.getString("designation"));
                employee.setDesignation(rs.getString("salary"));
            }
-
-
-
+          return employee;
        }
        catch (Exception ex) {
            ex.printStackTrace();
@@ -116,4 +123,10 @@ public class EmployeeDAOImpl implements EmployeeDAO {
             return null;
         }
     }
+
+	@Override
+	public void addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
 }
