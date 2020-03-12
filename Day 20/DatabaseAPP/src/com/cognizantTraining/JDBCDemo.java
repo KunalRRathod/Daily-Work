@@ -45,8 +45,9 @@ public class JDBCDemo {
        //String createtable = "CREATE TABLE MANAGER (mid int primary key, mname VARCHAR(50), address VARCHAR(60), age int, phone long )";
 
         //int res= stmt.executeUpdate(createtable);
-        String query1 = "insert into manager values(4,'Chaitali', 'Pune', 22, 8773342587)";
-        int result = stmt.executeUpdate(query1);
+        String query2 = "alter table employee modify column id int auto_increment";
+        //String query1 = "insert into manager values(4,'Chaitali', 'Pune', 22, 8773342587)";
+        int result = stmt.executeUpdate(query2);
         if (result > 0){
             System.out.println("Record Inserted Successfully");
         }
